@@ -1,4 +1,4 @@
-This is a c implimentation for the HyperLoglog++ algorithm (HyperLogLog was originally designed by Faljolet et al. and further developed into HyperLogLog++ by Google)
+This is a c implimentation for the HyperLoglog++ algorithm (HyperLogLog was originally designed by Flajolet et al. and further developed into HyperLogLog++ by Google)
 
 The HyperLogLog algorithm is used to estimate the amount of unique elements in a set. E.g.: Unique source IP adresses that sent a request to a server; unique search queries . . .
 
