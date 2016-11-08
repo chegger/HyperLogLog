@@ -1,4 +1,8 @@
 This is a c implimentation for the HyperLoglog++ algorithm (HyperLogLog was originally designed by Flajolet et al. and further developed into HyperLogLog++ by Google)
 
-The HyperLogLog algorithm is used to estimate the amount of unique elements in a set. E.g.: Unique source IP adresses that sent a request to a server; unique search queries . . .
+The HyperLogLog algorithm is used to estimate the amount of unique elements in a set. E.g.: Unique source IP adresses that sent a request to a server; unique search que$
+No matter how big the cardinalities get, the memory used to estimate the unique elements will always be constant.                                                      
+There is a trade-off between memory and exactness. The more memory is used in the algorithm, the more exact the result will be.
+The maximum error is on average 1.04/sqrt(m), where m is the number of bytes used in the algorithm (which has to be a power of 2).
+E.g.: 16kb (16384 bytes) will produce a maximum error of +- 0.008125 (0.8125%).
 
